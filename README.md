@@ -73,7 +73,7 @@ python test.py \
 
 We finished these training and testing processes with an A800. And we offload the KG pretrained embeddings to the CPU to reduce VRAM allocation. During training, the VRAM usage and training time of KnowLA and Llama2 are similar.
 
-We find that when we reduce the trainable parameters in KnowLA, the performance of the LLM is improved. Therefore, we recommend you to change the hyperparameter `kg_intermediate_size`  from 1024 to 100 in the `llama2-7B/config.json` for training. This weight can be downloaded from [here](). 
+We find that when we reduce the trainable parameters in KnowLA, the performance of the LLM is improved. Therefore, we recommend you to change the hyperparameter `kg_intermediate_size`  from 1024 to 100 in the `llama2-7B/config.json` for training. This weight can be downloaded from [here](https://huggingface.co/luoxindi/llama2-knowla-lowpara/tree/main). 
 
 For loading the modified `modeling_llama.py` file, we use `shutil.copyfile` to write it in the conda environment. If you do not want to load in this way, consider using the following code to load the modified `modeling_llama.py` file.
 
