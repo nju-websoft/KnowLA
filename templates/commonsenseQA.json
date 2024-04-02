@@ -1,0 +1,6 @@
+{
+    "description": "Template used by CommonsenseQA.",
+    "prompt_input": "Below is an instruction that describes a task, paired with an input that provides further context. Choose a correct answer that appears in the question.\n\n### Input:{input} Candidate answers are",
+    "response_split": "### Response:",
+    "prefix": "Below is an instruction that describes a task, paired with an input that provides further context. Choose a correct answer that appears in the question.\n\n### Input:" 
+}
