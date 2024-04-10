@@ -86,3 +86,17 @@ model = AutoModel.from_pretrained(
     )
 ```
 
+## Citation
+If you find the work useful, please kindly cite the following paper:
+```
+@inproceedings{KnowLA,
+  author    = {Xindi Luo and
+               Zequn Sun and
+               Jing Zhao and
+               Zhe Zhao and
+               Wei Hu},
+  title     = {KnowLA: Enhancing Parameter-efficient Finetuning with Knowledgeable Adaptation},
+  booktitle = {NAACL},
+  year      = {2024}
+}
+```
