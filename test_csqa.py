@@ -2,8 +2,6 @@ import os
 import sys
 import json
 import fire
-import gradio as gr
-import argparse
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 import torch
 import shutil
@@ -12,9 +10,6 @@ import transformers
 from peft import PeftModel
 from transformers import GenerationConfig, LlamaForCausalLM, LlamaTokenizer
 from commonsenseqa_prompter import CommonsensePrompter
-from utils.callbacks import Iteratorize, Stream
-from utils.prompter import Prompter
-from datasets import load_dataset
 import os
 import numpy as np
 from transformers import AutoTokenizer, AutoModel
